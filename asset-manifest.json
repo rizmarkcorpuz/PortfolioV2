@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/PortfolioV2/static/css/main.41021c95.css",
+    "main.js": "/PortfolioV2/static/js/main.41ac9936.js",
+    "static/media/portfolio_v1.png": "/PortfolioV2/static/media/portfolio_v1.bf39a2209424d205eb92.png",
+    "static/media/urban_gardener.jpg": "/PortfolioV2/static/media/urban_gardener.43aa468397774de05086.jpg",
+    "static/media/custom_logo_half_yellow.png": "/PortfolioV2/static/media/custom_logo_half_yellow.1ca87e25a2f3e2c056ec.png",
+    "static/media/ventures_++.jpg": "/PortfolioV2/static/media/ventures_++.f1143a9d72ec43ca1b19.jpg",
+    "static/media/custom_logo_half.png": "/PortfolioV2/static/media/custom_logo_half.410f9bfe1b39f78043b4.png",
+    "static/media/vs_code.png": "/PortfolioV2/static/media/vs_code.19edc3fbac1c451f289d.png",
+    "static/media/logo_only.png": "/PortfolioV2/static/media/logo_only.676abc4fc23a3c510c06.png",
+    "static/media/Resume.pdf": "/PortfolioV2/static/media/Resume.286ba5013acd7e314347.pdf",
+    "static/media/react.png": "/PortfolioV2/static/media/react.0cf951a69d8e58f83f9d.png",
+    "static/media/node.png": "/PortfolioV2/static/media/node.952a9ea986dcfa5229ad.png",
+    "static/media/helvetica-neu.ttf": "/PortfolioV2/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/github.png": "/PortfolioV2/static/media/github.3b9e32903aa89111875d.png",
+    "static/media/LaBelleAurore.woff2": "/PortfolioV2/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/html.png": "/PortfolioV2/static/media/html.2ba4fabc69a89a8f71e6.png",
+    "static/media/tailwind.png": "/PortfolioV2/static/media/tailwind.e47ac876b8d4d0bba47a.png",
+    "static/media/css.png": "/PortfolioV2/static/media/css.69a82c2d9e45c933a9cb.png",
+    "static/media/google_keep_clone.png": "/PortfolioV2/static/media/google_keep_clone.b66336eed97b24c89332.png",
+    "static/media/javascript.png": "/PortfolioV2/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
+    "static/media/CoolveticaRg-Regular.woff2": "/PortfolioV2/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/PortfolioV2/index.html",
+    "main.41021c95.css.map": "/PortfolioV2/static/css/main.41021c95.css.map",
+    "main.41ac9936.js.map": "/PortfolioV2/static/js/main.41ac9936.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.41021c95.css",
+    "static/js/main.41ac9936.js"
+  ]
+}
