@@ -6,11 +6,12 @@
 
 @layer base {
     body {
-        @apply font-[Raleway];
+        font-family: Raleway;
     }
     li {
-        @apply px-4;
-        @apply cursor-pointer
+        padding-left: 1rem/* 16px */;
+        padding-right: 1rem/* 16px */;
+        cursor: pointer;
     }
 }
 
