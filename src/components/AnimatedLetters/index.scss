@@ -1,0 +1,56 @@
+.text-animate{
+    display: inline-block;
+    opacity: 0;
+    animation: bounceIn 1s 1s;
+    animation-fill-mode: forwards;
+    min-width: 10px;
+}
+
+.text-animate-hover{
+    min-width: 10px;
+    display: inline-block;
+    animation-fill-mode: both;
+
+    &:hover{
+        animation: rubberBand 1s;
+        color: #ffd700;
+    }
+}
+
+@for $i from 1 through 63 {
+    .text-animate._#{$i}{
+        animation-delay: #{calc($i /20)}s;
+    }
+}
+
+.text-animate-underline{
+    display: inline-block;
+    opacity: 0;
+    animation: bounceIn 1s 1s;
+    animation-fill-mode: forwards;
+    min-width: 10px;
+    --tw-border-opacity: 1;
+    border-bottom-width: 4px;
+    border-color: #639C55;
+}
+
+.text-animate-underline-hover{
+    min-width: 10px;
+    display: inline-block;
+    animation-fill-mode: both;
+    --tw-border-opacity: 1;
+    border-bottom-width: 4px;
+    border-color: #639C55;
+
+    &:hover{
+        animation: rubberBand 1s;
+        color: #ffd700;
+    }
+}
+
+@for $i from 1 through 35 {
+    .text-animate-underline._#{$i}{
+        animation-delay: #{calc($i /10)}s;
+    }
+}
+

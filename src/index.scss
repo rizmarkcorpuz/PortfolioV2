@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+    body {
+        @apply font-[Raleway];
+    }
+    li {
+        @apply px-4;
+        @apply cursor-pointer
+    }
+}
+
+@keyframes zoom-in-zoom-out {
+    0%{
+        top: 80px;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        transform: scale(1, 1);
+    }
+    100%{
+        top: 80px;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        transform: scale(0, 0);
+    }
+}
+
+.logo-div{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 83.333333%;
+    --tw-bg-opacity: 1;
+    background-color: rgb(3 7 14 / var(--tw-bg-opacity));
+    animation: zoom-in-zoom-out 0.4s ease-out;
+    animation-delay: 3.61s;
+}
+
+.logo-div-hide{
+    visibility: hidden;
+}
+
+.svg{
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img{
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 70px;
+    height: 70px;
+    animation: fadeIn 1s 1.8s backwards;
+    animation-delay: 2s;
+    z-index: 1;
+}
+
+.path {
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
+    animation: dash 2s linear forwards;
+    animation-timing-function: cubic-bezier(0.645,0.045,0.355,1);
+    animation-delay: 1s;
+    stroke-width: 7px;
+    
+  }
+  
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 1200;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+.nav-transition{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: -700px;
+    right: 0px;
+    opacity: 100;
+    width: 100%;
+    height: 55vh;
+    background: #232e3f;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 10px 0 0 10px;
+    transition: 0.3s ease-in-out;
+
+}
+
+a.active{
+    color:#ffd700;
+}
+
+.text-animation{
+    animation: fadeIn 1s 1.8s backwards;
+}
+
+.nav-animation{
+    animation: fadeIn 1s 0.8s backwards;
+}
+
+.name-animation{
+    animation: fadeIn 1s 1s backwards;
+}
+
+.p-animation{
+    animation: fadeIn 1s 2.3s backwards;
+}
+
+
+.about-page,
+.skill-page,
+.work-page,
+.contact-page{
+    
+    color: #ffd700;
+
+    .text-animate-underline-hover{
+        &:hover{
+            color: #fff;
+        }
+    }
+}
+
+.nav-transition.active{
+    top: 80px;
+    z-index: 99999;
+}
+
+.content-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+.content-div:hover {
+    background-image: linear-gradient(
+        to right,
+        rgba(112, 157, 255, 0.8),
+        hsla(242, 74%, 61%, 0.8)   
+    )!important;
+}
