@@ -55,7 +55,7 @@ const Navbar = () => {
 
     const resetHome = () => {
 
-        if(location.pathname === '/'){
+        if(location.pathname === '/PortfolioV2/'){
             localStorage.setItem('firstLoadDone', null);
             window.location.reload(false);
         }else{
@@ -96,7 +96,7 @@ const Navbar = () => {
     {isLoaded && (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 nav-animation'>
       <div>
-        <Link className='logo' to='/'>
+        <Link className='logo' to='/PortfolioV2/'>
             <img 
                 src={LogoYellow} 
                 alt="Logo" 
