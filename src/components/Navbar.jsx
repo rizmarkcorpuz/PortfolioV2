@@ -30,7 +30,7 @@ const Navbar = () => {
                 setLoaded(true)
             }, 4000)
             console.log('This is the initial load');
-        }else if(location.pathname === '/'){
+        }else if(location.pathname === '/PortfolioV2/'){
             setTimeout(() =>{
                 setAnimationClass(false)
             }, 4000)
@@ -116,7 +116,7 @@ const Navbar = () => {
                 <NavLink 
                     exact="true" 
                     activeclassname="active" 
-                    to="/"
+                    to="/PortfolioV2/"
                     onClick={resetHome}
                     className='hover:text-[#ffd700]'
                 >
@@ -175,7 +175,7 @@ const Navbar = () => {
         {/* Mobile menu */}
         <ul className={!nav ? 'nav-transition' : 'md:hidden nav-transition active'}>
         <li className='py-6 text-2xl sm:text-4xl'>
-            <a onClick={handleClick} href="/">Home</a>
+            <a onClick={handleClick} href="/PortfolioV2/">Home</a>
         </li>
         <li className='py-6 text-2xl sm:text-4xl'>
             <a onClick={handleClick} href="/about">About</a>
