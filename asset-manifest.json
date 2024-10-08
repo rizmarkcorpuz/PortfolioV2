@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PortfolioV2/static/css/main.c3aa21fe.css",
-    "main.js": "/PortfolioV2/static/js/main.98ef358b.js",
+    "main.css": "/PortfolioV2/static/css/main.41021c95.css",
+    "main.js": "/PortfolioV2/static/js/main.731cece1.js",
     "static/media/portfolio_v1.png": "/PortfolioV2/static/media/portfolio_v1.bf39a2209424d205eb92.png",
     "static/media/urban_gardener.jpg": "/PortfolioV2/static/media/urban_gardener.43aa468397774de05086.jpg",
     "static/media/custom_logo_half_yellow.png": "/PortfolioV2/static/media/custom_logo_half_yellow.1ca87e25a2f3e2c056ec.png",
@@ -9,7 +9,7 @@
     "static/media/custom_logo_half.png": "/PortfolioV2/static/media/custom_logo_half.410f9bfe1b39f78043b4.png",
     "static/media/vs_code.png": "/PortfolioV2/static/media/vs_code.19edc3fbac1c451f289d.png",
     "static/media/logo_only.png": "/PortfolioV2/static/media/logo_only.676abc4fc23a3c510c06.png",
-    "static/media/Resume.pdf": "/PortfolioV2/static/media/Resume.d5b684c815ff264024e9.pdf",
+    "static/media/Resume.pdf": "/PortfolioV2/static/media/Resume.286ba5013acd7e314347.pdf",
     "static/media/react.png": "/PortfolioV2/static/media/react.0cf951a69d8e58f83f9d.png",
     "static/media/node.png": "/PortfolioV2/static/media/node.952a9ea986dcfa5229ad.png",
     "static/media/helvetica-neu.ttf": "/PortfolioV2/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
@@ -22,11 +22,11 @@
     "static/media/javascript.png": "/PortfolioV2/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "static/media/CoolveticaRg-Regular.woff2": "/PortfolioV2/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/PortfolioV2/index.html",
-    "main.c3aa21fe.css.map": "/PortfolioV2/static/css/main.c3aa21fe.css.map",
-    "main.98ef358b.js.map": "/PortfolioV2/static/js/main.98ef358b.js.map"
+    "main.41021c95.css.map": "/PortfolioV2/static/css/main.41021c95.css.map",
+    "main.731cece1.js.map": "/PortfolioV2/static/js/main.731cece1.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3aa21fe.css",
-    "static/js/main.98ef358b.js"
+    "static/css/main.41021c95.css",
+    "static/js/main.731cece1.js"
   ]
 }
