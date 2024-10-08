@@ -8,8 +8,8 @@ const Home = () => {
     const [isLoaded, setLoaded] = useState(false)
     
     const nameArray = "Riz Mark Corpuz.".split("");
-    const jobArray = "I'm a Full Stack".split("");
-    const jobArray2 = "Developer.".split("");
+    const jobArray = "I'm an Automation".split("");
+    const jobArray2 = "Specialist.".split("");
 
     useEffect(() =>{
 
@@ -39,7 +39,7 @@ const Home = () => {
         <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={22} />
         </h1>
         <h2 className='text-4xl sm:text-7xl font-bold text-[#8892b0]'><AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={38} /> <AnimatedLetters letterClass={letterClass} strArray={jobArray2} idx={54} /></h2>
-        <p className='text-[#8892b0] py-4 max-w-[550px] mt-2 p-animation'>I'm a full-stack developer that specializes in creating (and sometimes designing) outstanding digital experiences. At the moment, my primary focus is on developing responsive full-stack <span className='text-[#ffd700] font-medium'>web applications.</span></p>        
+        <p className='text-[#8892b0] py-4 max-w-[550px] mt-2 p-animation'>I'm an automation specialist focused on creating no-code and low-code automation workflows that enhance efficiency and productivity. Currently, my primary focus is on developing streamlined processes and integrations to optimize business operations, including <span className='text-[#ffd700] font-medium'>workflows.</span></p>
       </div>
         
 
