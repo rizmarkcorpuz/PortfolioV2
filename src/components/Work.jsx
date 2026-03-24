@@ -43,7 +43,7 @@ const Work = () => {
                         <div
                             key={index}
                             style={{ backgroundImage: `url(${item.image})` }}
-                            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div"
+                            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div relative overflow-hidden"
                         >
                             {/* Default: show name at bottom */}
                             <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 px-3 py-2 group-hover:opacity-0 transition-opacity duration-300 rounded-b-md">
