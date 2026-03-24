@@ -65,7 +65,7 @@ const Navbar = () => {
         </div>
       )}
     {isLoaded && (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 nav-animation'>
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 nav-animation z-50'>
       <div>
         <img
             src={LogoYellow}

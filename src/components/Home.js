@@ -40,6 +40,13 @@ const Home = () => {
         </h1>
         <h2 className='text-4xl sm:text-6xl font-bold text-[#8892b0]'><AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={39} /> <AnimatedLetters letterClass={letterClass} strArray={jobArray2} idx={54} /></h2>
         <p className='text-[#8892b0] py-4 max-w-[550px] mt-2 p-animation'>I'm an automation specialist focused on creating no-code and low-code automation workflows that enhance efficiency and productivity. Currently, my primary focus is on developing streamlined processes and integrations to optimize business operations, including <span className='text-[#ffd700] font-medium'>workflows.</span></p>
+        <div className='p-animation'>
+          <a href='https://calendly.com/rizmark-corpuz/30min' target='_blank' rel='noreferrer'>
+            <button className='text-white border-2 border-[#ffd700] hover:bg-[#ffd700] hover:text-[#0a192f] hover:border-[#ffd700] px-6 py-3 mt-2 rounded font-semibold tracking-wide transition-colors duration-300'>
+              Book a Call
+            </button>
+          </a>
+        </div>
       </div>
         
 
