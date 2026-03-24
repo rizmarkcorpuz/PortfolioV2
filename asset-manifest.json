@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PortfolioV2/static/css/main.4046be0c.css",
-    "main.js": "/PortfolioV2/static/js/main.9afa9974.js",
+    "main.css": "/PortfolioV2/static/css/main.20693d65.css",
+    "main.js": "/PortfolioV2/static/js/main.2070b4ff.js",
     "static/media/monthly_leaderboard.png": "/PortfolioV2/static/media/monthly_leaderboard.658b6d5d15141523665e.png",
     "static/media/portfolio_v1.png": "/PortfolioV2/static/media/portfolio_v1.bf39a2209424d205eb92.png",
     "static/media/slack_channels_airtable.png": "/PortfolioV2/static/media/slack_channels_airtable.085dd3622729ba05c7d1.png",
@@ -26,11 +26,11 @@
     "static/media/javascript.png": "/PortfolioV2/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "static/media/CoolveticaRg-Regular.woff2": "/PortfolioV2/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/PortfolioV2/index.html",
-    "main.4046be0c.css.map": "/PortfolioV2/static/css/main.4046be0c.css.map",
-    "main.9afa9974.js.map": "/PortfolioV2/static/js/main.9afa9974.js.map"
+    "main.20693d65.css.map": "/PortfolioV2/static/css/main.20693d65.css.map",
+    "main.2070b4ff.js.map": "/PortfolioV2/static/js/main.2070b4ff.js.map"
   },
   "entrypoints": [
-    "static/css/main.4046be0c.css",
-    "static/js/main.9afa9974.js"
+    "static/css/main.20693d65.css",
+    "static/js/main.2070b4ff.js"
   ]
 }
