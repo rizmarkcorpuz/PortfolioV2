@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PortfolioV2/static/css/main.329bf5a2.css",
-    "main.js": "/PortfolioV2/static/js/main.d705af6c.js",
+    "main.css": "/PortfolioV2/static/css/main.d3297d04.css",
+    "main.js": "/PortfolioV2/static/js/main.cbd047a3.js",
     "static/media/monthly_leaderboard.png": "/PortfolioV2/static/media/monthly_leaderboard.658b6d5d15141523665e.png",
     "static/media/portfolio_v1.png": "/PortfolioV2/static/media/portfolio_v1.bf39a2209424d205eb92.png",
     "static/media/slack_channels_airtable.png": "/PortfolioV2/static/media/slack_channels_airtable.085dd3622729ba05c7d1.png",
@@ -25,12 +25,19 @@
     "static/media/google_keep_clone.png": "/PortfolioV2/static/media/google_keep_clone.b66336eed97b24c89332.png",
     "static/media/javascript.png": "/PortfolioV2/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "static/media/CoolveticaRg-Regular.woff2": "/PortfolioV2/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "static/media/zapier.svg": "/PortfolioV2/static/media/zapier.595403f07babb920d5b8fd25e15948f7.svg",
+    "static/media/googleappsscript.svg": "/PortfolioV2/static/media/googleappsscript.c6e8120a5ae341872947500c98ded50d.svg",
+    "static/media/n8n.svg": "/PortfolioV2/static/media/n8n.e4f6944d696d11ca378ec7b69e297730.svg",
+    "static/media/python.svg": "/PortfolioV2/static/media/python.cd1e1de5623bcbd8c00476be7777946f.svg",
+    "static/media/hubspot.svg": "/PortfolioV2/static/media/hubspot.2f31a31918f56c3928ca41257f0d1260.svg",
+    "static/media/airtable.svg": "/PortfolioV2/static/media/airtable.8f4c0ec25186aa959aecad1a4edc2b84.svg",
     "index.html": "/PortfolioV2/index.html",
-    "main.329bf5a2.css.map": "/PortfolioV2/static/css/main.329bf5a2.css.map",
-    "main.d705af6c.js.map": "/PortfolioV2/static/js/main.d705af6c.js.map"
+    "static/media/make.svg": "/PortfolioV2/static/media/make.132482581d867d400908d91b2aab29bd.svg",
+    "main.d3297d04.css.map": "/PortfolioV2/static/css/main.d3297d04.css.map",
+    "main.cbd047a3.js.map": "/PortfolioV2/static/js/main.cbd047a3.js.map"
   },
   "entrypoints": [
-    "static/css/main.329bf5a2.css",
-    "static/js/main.d705af6c.js"
+    "static/css/main.d3297d04.css",
+    "static/js/main.cbd047a3.js"
   ]
 }
