@@ -42,26 +42,24 @@ const Work = () => {
                         /* Automation project card */
                         <div
                             key={index}
-                            style={{ backgroundColor: item.color }}
-                            className="shadow-lg shadow-[#040c16] group container rounded-md flex flex-col justify-between p-5 mx-auto min-h-[200px]"
+                            style={{ backgroundImage: `url(${item.image})` }}
+                            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div"
                         >
-                            <div>
-                                <span className="text-lg font-bold text-white tracking-wider block mb-2">
-                                    {item.name}
-                                </span>
-                                <p className="text-sm text-gray-200 leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                    {item.description}
-                                </p>
+                            {/* Default: show name at bottom */}
+                            <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 px-3 py-2 group-hover:opacity-0 transition-opacity duration-300 rounded-b-md">
+                                <span className="text-sm font-bold text-white tracking-wide">{item.name}</span>
                             </div>
-                            <div className="flex flex-wrap gap-2 mt-3">
-                                {item.tools.map((tool, i) => (
-                                    <span
-                                        key={i}
-                                        className="text-xs bg-white bg-opacity-20 text-white px-2 py-1 rounded-full"
-                                    >
-                                        {tool}
-                                    </span>
-                                ))}
+                            {/* Hover: show description + tools */}
+                            <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-3">
+                                <span className="text-lg font-bold text-white tracking-wider block mb-2">{item.name}</span>
+                                <p className="text-xs text-gray-200 leading-relaxed mb-3">{item.description}</p>
+                                <div className="flex flex-wrap justify-center gap-1">
+                                    {item.tools.map((tool, i) => (
+                                        <span key={i} className="text-xs bg-white bg-opacity-20 text-white px-2 py-1 rounded-full">
+                                            {tool}
+                                        </span>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     ) : (

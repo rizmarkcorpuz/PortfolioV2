@@ -4,6 +4,10 @@ import UrbanGardener from '../assets/projects/urban_gardener.jpg'
 import Ventures from '../assets/projects/ventures_++.jpg'
 import PortfolioV1 from '../assets/projects/portfolio_v1.png'
 import GoogleKeepClone from '../assets/projects/google_keep_clone.png'
+import MonthlyLeaderboard from '../assets/projects/monthly_leaderboard.png'
+import N8NQuickBooks from '../assets/projects/n8n_quickbooks.png'
+import SlackChannels from '../assets/projects/slack_channels_airtable.png'
+import HubSpotDeal from '../assets/projects/hubspot_deal.png'
 
 export const data=[
     {
@@ -38,6 +42,7 @@ export const data=[
         id:5,
         type:"automation",
         name:"Monthly SDR Leaderboard",
+        image:MonthlyLeaderboard,
         description:"Automated end-of-day reporting system in Google Sheets tracking SDR performance metrics including meetings scheduled, bids, goal completion, calls per day, and conversion rates across all Temporary Wall Systems locations.",
         tools:["Google Sheets", "Google Apps Script", "Automation"],
         color:"#1a7a4a",
@@ -46,6 +51,7 @@ export const data=[
         id:6,
         type:"automation",
         name:"N8N QuickBooks Invoice Creation",
+        image:N8NQuickBooks,
         description:"Built an N8N workflow that automatically retrieves client hours from project data, merges invoice data, searches for existing invoice folders, and creates QuickBooks invoices on a scheduled trigger — eliminating manual billing effort.",
         tools:["N8N", "QuickBooks", "Google Sheets", "REST API"],
         color:"#1a4a7a",
@@ -54,6 +60,7 @@ export const data=[
         id:7,
         type:"automation",
         name:"Slack Channel Creation via Airtable",
+        image:SlackChannels,
         description:"Zapier automation that listens for Airtable checkbox triggers to automatically create private Slack channels, invite internal and external users, and update Airtable with the new channel name — handling both internal and external client paths.",
         tools:["Zapier", "Slack", "Airtable"],
         color:"#4a1a7a",
@@ -62,6 +69,7 @@ export const data=[
         id:8,
         type:"automation",
         name:"HubSpot Deal Auto-Creation",
+        image:HubSpotDeal,
         description:"Make.com workflow that automatically creates a HubSpot deal whenever a new appointment is scheduled — extracting contact details, assigning project types, and routing deals through the CRM pipeline without manual entry.",
         tools:["Make.com", "HubSpot CRM", "Webhooks"],
         color:"#7a3a1a",
