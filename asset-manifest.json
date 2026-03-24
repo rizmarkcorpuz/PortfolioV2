@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PortfolioV2/static/css/main.d3297d04.css",
-    "main.js": "/PortfolioV2/static/js/main.cbd047a3.js",
+    "main.js": "/PortfolioV2/static/js/main.db9ed03a.js",
     "static/media/monthly_leaderboard.png": "/PortfolioV2/static/media/monthly_leaderboard.658b6d5d15141523665e.png",
     "static/media/portfolio_v1.png": "/PortfolioV2/static/media/portfolio_v1.bf39a2209424d205eb92.png",
     "static/media/slack_channels_airtable.png": "/PortfolioV2/static/media/slack_channels_airtable.085dd3622729ba05c7d1.png",
@@ -11,7 +11,6 @@
     "static/media/custom_logo_half_yellow.png": "/PortfolioV2/static/media/custom_logo_half_yellow.1ca87e25a2f3e2c056ec.png",
     "static/media/ventures_++.jpg": "/PortfolioV2/static/media/ventures_++.f1143a9d72ec43ca1b19.jpg",
     "static/media/custom_logo_half.png": "/PortfolioV2/static/media/custom_logo_half.410f9bfe1b39f78043b4.png",
-    "static/media/vs_code.png": "/PortfolioV2/static/media/vs_code.19edc3fbac1c451f289d.png",
     "static/media/logo_only.png": "/PortfolioV2/static/media/logo_only.676abc4fc23a3c510c06.png",
     "static/media/Resume.pdf": "/PortfolioV2/static/media/Resume.cc6186bbfe58c2b57d80.pdf",
     "static/media/react.png": "/PortfolioV2/static/media/react.0cf951a69d8e58f83f9d.png",
@@ -34,10 +33,10 @@
     "index.html": "/PortfolioV2/index.html",
     "static/media/make.svg": "/PortfolioV2/static/media/make.132482581d867d400908d91b2aab29bd.svg",
     "main.d3297d04.css.map": "/PortfolioV2/static/css/main.d3297d04.css.map",
-    "main.cbd047a3.js.map": "/PortfolioV2/static/js/main.cbd047a3.js.map"
+    "main.db9ed03a.js.map": "/PortfolioV2/static/js/main.db9ed03a.js.map"
   },
   "entrypoints": [
     "static/css/main.d3297d04.css",
-    "static/js/main.cbd047a3.js"
+    "static/js/main.db9ed03a.js"
   ]
 }
