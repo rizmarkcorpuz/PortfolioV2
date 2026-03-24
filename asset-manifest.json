@@ -1,8 +1,12 @@
 {
   "files": {
-    "main.css": "/PortfolioV2/static/css/main.c6730f1d.css",
-    "main.js": "/PortfolioV2/static/js/main.36bdd23b.js",
+    "main.css": "/PortfolioV2/static/css/main.7afb16bd.css",
+    "main.js": "/PortfolioV2/static/js/main.6db9de3a.js",
+    "static/media/monthly_leaderboard.png": "/PortfolioV2/static/media/monthly_leaderboard.658b6d5d15141523665e.png",
     "static/media/portfolio_v1.png": "/PortfolioV2/static/media/portfolio_v1.bf39a2209424d205eb92.png",
+    "static/media/slack_channels_airtable.png": "/PortfolioV2/static/media/slack_channels_airtable.085dd3622729ba05c7d1.png",
+    "static/media/n8n_quickbooks.png": "/PortfolioV2/static/media/n8n_quickbooks.3d78cd93732df9a60c1b.png",
+    "static/media/hubspot_deal.png": "/PortfolioV2/static/media/hubspot_deal.866780059785241fdb59.png",
     "static/media/urban_gardener.jpg": "/PortfolioV2/static/media/urban_gardener.43aa468397774de05086.jpg",
     "static/media/custom_logo_half_yellow.png": "/PortfolioV2/static/media/custom_logo_half_yellow.1ca87e25a2f3e2c056ec.png",
     "static/media/ventures_++.jpg": "/PortfolioV2/static/media/ventures_++.f1143a9d72ec43ca1b19.jpg",
@@ -22,11 +26,11 @@
     "static/media/javascript.png": "/PortfolioV2/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "static/media/CoolveticaRg-Regular.woff2": "/PortfolioV2/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/PortfolioV2/index.html",
-    "main.c6730f1d.css.map": "/PortfolioV2/static/css/main.c6730f1d.css.map",
-    "main.36bdd23b.js.map": "/PortfolioV2/static/js/main.36bdd23b.js.map"
+    "main.7afb16bd.css.map": "/PortfolioV2/static/css/main.7afb16bd.css.map",
+    "main.6db9de3a.js.map": "/PortfolioV2/static/js/main.6db9de3a.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6730f1d.css",
-    "static/js/main.36bdd23b.js"
+    "static/css/main.7afb16bd.css",
+    "static/js/main.6db9de3a.js"
   ]
 }
