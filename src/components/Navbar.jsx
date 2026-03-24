@@ -1,5 +1,4 @@
 import React, {  useEffect, useState } from 'react'
-import { Link as ScrollLink } from 'react-scroll'
 import { FaBars, FaTimes, FaLinkedin, FaGithub } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
@@ -31,6 +30,14 @@ const Navbar = () => {
     const resetHome = () => {
         localStorage.setItem('firstLoadDone', null);
         window.location.reload(false);
+    }
+
+    const scrollTo = (id) => {
+        const el = document.querySelector(`[name="${id}"]`);
+        if (el) {
+            const top = el.getBoundingClientRect().top + window.scrollY - 80;
+            window.scrollTo({ top, behavior: 'smooth' });
+        }
     }
     
 
@@ -76,21 +83,11 @@ const Navbar = () => {
 
     {/* menu */}
         <ul className='hidden md:flex'>
-            <li>
-                <ScrollLink to="home" smooth={true} duration={500} className='hover:text-[#ffd700] cursor-pointer'>Home</ScrollLink>
-            </li>
-            <li>
-                <ScrollLink to="about" smooth={true} duration={500} className='hover:text-[#ffd700] cursor-pointer'>About</ScrollLink>
-            </li>
-            <li>
-                <ScrollLink to="skills" smooth={true} duration={500} className='hover:text-[#ffd700] cursor-pointer'>Skills</ScrollLink>
-            </li>
-            <li>
-                <ScrollLink to="work" smooth={true} duration={500} className='hover:text-[#ffd700] cursor-pointer'>Work</ScrollLink>
-            </li>
-            <li>
-                <ScrollLink to="contact" smooth={true} duration={500} className='hover:text-[#ffd700] cursor-pointer'>Contact</ScrollLink>
-            </li>
+            <li><button onClick={() => scrollTo('home')} className='hover:text-[#ffd700] cursor-pointer'>Home</button></li>
+            <li><button onClick={() => scrollTo('about')} className='hover:text-[#ffd700] cursor-pointer'>About</button></li>
+            <li><button onClick={() => scrollTo('skills')} className='hover:text-[#ffd700] cursor-pointer'>Skills</button></li>
+            <li><button onClick={() => scrollTo('work')} className='hover:text-[#ffd700] cursor-pointer'>Work</button></li>
+            <li><button onClick={() => scrollTo('contact')} className='hover:text-[#ffd700] cursor-pointer'>Contact</button></li>
         </ul>
 
     {/* Hamburger */}
@@ -100,21 +97,11 @@ const Navbar = () => {
 
         {/* Mobile menu */}
         <ul className={!nav ? 'nav-transition' : 'md:hidden nav-transition active'}>
-            <li className='py-6 text-2xl sm:text-4xl'>
-                <ScrollLink to="home" smooth={true} duration={500} onClick={handleClick}>Home</ScrollLink>
-            </li>
-            <li className='py-6 text-2xl sm:text-4xl'>
-                <ScrollLink to="about" smooth={true} duration={500} onClick={handleClick}>About</ScrollLink>
-            </li>
-            <li className='py-6 text-2xl sm:text-4xl'>
-                <ScrollLink to="skills" smooth={true} duration={500} onClick={handleClick}>Skills</ScrollLink>
-            </li>
-            <li className='py-6 text-2xl sm:text-4xl'>
-                <ScrollLink to="work" smooth={true} duration={500} onClick={handleClick}>Work</ScrollLink>
-            </li>
-            <li className='py-6 text-2xl sm:text-4xl'>
-                <ScrollLink to="contact" smooth={true} duration={500} onClick={handleClick}>Contact</ScrollLink>
-            </li>
+            <li className='py-6 text-2xl sm:text-4xl'><button onClick={() => { scrollTo('home'); handleClick(); }}>Home</button></li>
+            <li className='py-6 text-2xl sm:text-4xl'><button onClick={() => { scrollTo('about'); handleClick(); }}>About</button></li>
+            <li className='py-6 text-2xl sm:text-4xl'><button onClick={() => { scrollTo('skills'); handleClick(); }}>Skills</button></li>
+            <li className='py-6 text-2xl sm:text-4xl'><button onClick={() => { scrollTo('work'); handleClick(); }}>Work</button></li>
+            <li className='py-6 text-2xl sm:text-4xl'><button onClick={() => { scrollTo('contact'); handleClick(); }}>Contact</button></li>
         </ul>
 
 
