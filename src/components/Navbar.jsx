@@ -34,10 +34,7 @@ const Navbar = () => {
 
     const scrollTo = (id) => {
         const el = document.querySelector(`[name="${id}"]`);
-        if (el) {
-            const top = el.getBoundingClientRect().top + window.scrollY - 80;
-            window.scrollTo({ top, behavior: 'smooth' });
-        }
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
     
 
