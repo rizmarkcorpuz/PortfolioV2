@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import AnimatedLetters from './AnimatedLetters';
+import ProfilePhoto from '../assets/picture.JPG';
 
 const Home = () => {
 
@@ -79,9 +80,8 @@ const Home = () => {
         {/* Right: profile photo placeholder */}
         <div className='hidden md:flex justify-center items-center p-animation'>
           <div className='relative'>
-            <div className='w-64 h-64 rounded-full bg-[#112240] border-4 border-[#ffd700] flex items-center justify-center shadow-2xl shadow-[#ffd700]/20'>
-              {/* Replace with: <img src={ProfilePhoto} alt="Riz Mark Corpuz" className='w-full h-full rounded-full object-cover' /> */}
-              <span className='text-[#ffd700] text-8xl font-bold select-none'>R</span>
+            <div className='w-64 h-64 rounded-full border-4 border-[#ffd700] shadow-2xl shadow-[#ffd700]/20 overflow-hidden'>
+              <img src={ProfilePhoto} alt="Riz Mark Corpuz" className='w-full h-full object-cover' />
             </div>
             <div className='absolute -bottom-2 -right-2 w-12 h-12 bg-[#ffd700] rounded-full flex items-center justify-center'>
               <span className='text-[#0a192f] text-lg font-bold'>⚡</span>
