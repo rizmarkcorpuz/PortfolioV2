@@ -7,7 +7,9 @@ const Home = () => {
 
     const [isLoaded, setLoaded] = useState(false)
     
-    const nameArray = "Riz Mark Corpuz.".split("");
+    const nameArray = "Riz".split("");
+    const nameArray2 = "Mark".split("");
+    const nameArray3 = "Corpuz.".split("");
     const jobArray = "I'm an AI Automation".split("");
     const jobArray2 = "Specialist.".split("");
 
@@ -43,11 +45,23 @@ const Home = () => {
         <div>
           <p className='text-yellow-300 mb-2 name-animation'>Hi, my name is</p>
           <h1 className='text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-2 text-[#ccd6f6]'>
-            <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={22} />
+            <span className='inline-block'>
+              <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={22} />
+            </span>{' '}
+            <span className='inline-block'>
+              <AnimatedLetters letterClass={letterClass} strArray={nameArray2} idx={26} />
+            </span>{' '}
+            <span className='inline-block'>
+              <AnimatedLetters letterClass={letterClass} strArray={nameArray3} idx={31} />
+            </span>
           </h1>
           <h2 className='text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-[#8892b0]'>
-            <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={39} />{' '}
-            <AnimatedLetters letterClass={letterClass} strArray={jobArray2} idx={54} />
+            <span className='inline-block'>
+              <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={39} />
+            </span>{' '}
+            <span className='inline-block'>
+              <AnimatedLetters letterClass={letterClass} strArray={jobArray2} idx={54} />
+            </span>
           </h2>
           <p className='text-[#8892b0] py-4 mt-2 p-animation'>
             I'm an AI automation specialist focused on creating no-code and low-code automation workflows that enhance efficiency and productivity. My primary focus is on developing streamlined processes and integrations to optimize business operations, including{' '}
