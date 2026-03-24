@@ -56,7 +56,7 @@ const Home = () => {
               <AnimatedLetters letterClass={letterClass} strArray={nameArray3} idx={31} />
             </span>
           </h1>
-          <h2 className='text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-[#8892b0]'>
+          <h2 className='text-2xl sm:text-3xl lg:text-3xl xl:text-4xl font-bold text-[#8892b0]'>
             <span className='inline-block'>
               <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={39} />
             </span>{' '}
