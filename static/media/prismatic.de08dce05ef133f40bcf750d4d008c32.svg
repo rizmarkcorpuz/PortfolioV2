@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="prisGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3B6FD4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#40D9D0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Outer triangle -->
+  <polygon points="50,8 95,88 5,88" fill="none" stroke="url(#prisGrad)" stroke-width="7" stroke-linejoin="round"/>
+  <!-- Inner triangle -->
+  <polygon points="50,32 77,78 23,78" fill="none" stroke="url(#prisGrad)" stroke-width="5.5" stroke-linejoin="round"/>
+  <!-- Left connector line -->
+  <line x1="24" y1="78" x2="8" y2="88" stroke="url(#prisGrad)" stroke-width="7" stroke-linecap="round"/>
+</svg>
