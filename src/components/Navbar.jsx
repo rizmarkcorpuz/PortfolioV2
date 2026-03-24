@@ -1,5 +1,5 @@
 import React, {  useEffect, useState } from 'react'
-import { Link, NavLink, useLocation } from 'react-router-dom'
+import { Link as ScrollLink } from 'react-scroll'
 import { FaBars, FaTimes, FaLinkedin, FaGithub } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
@@ -10,60 +10,27 @@ import Resume from '../assets/Resume.pdf'
 
 const Navbar = () => {
 
-    // const [isRefresh, setRefresh] = useState()
     const [nav, setNav] = useState(false)
     const handleClick = () => setNav(!nav)
     const [animationClass , setAnimationClass] = useState(true)
     const [isLoaded, setLoaded] = useState(false)
 
-    const location = useLocation();
-
     useEffect(() =>{
 
         if(localStorage.getItem('firstLoadDone') === null){
             localStorage.setItem('firstLoadDone', 1);
-            setTimeout(() =>{
-                setAnimationClass(false)
-            }, 4000)
-    
-            setTimeout(() =>{
-                setLoaded(true)
-            }, 4000)
-            console.log('This is the initial load');
-        }else if(location.pathname === '/PortfolioV2/'){
-            setTimeout(() =>{
-                setAnimationClass(false)
-            }, 4000)
-    
-            setTimeout(() =>{
-                setLoaded(true)
-            }, 4000)
+            setTimeout(() =>{ setAnimationClass(false) }, 4000)
+            setTimeout(() =>{ setLoaded(true) }, 4000)
         }else{
-            // console.log('Animation', animationClass)
-            // console.log('Loaded', isLoaded)
             setAnimationClass(false)
             setLoaded(true)
-            // console.log('This is a page refresh')
         }
-        
 
-        // console.log('Loaded Navbar', isLoaded)
-        // console.log('Loaded Animation', animationClass)
-        // console.log('next-line')
-
-    }, [animationClass, isLoaded, location.pathname])
+    }, [])
 
     const resetHome = () => {
-
-        if(location.pathname === '/PortfolioV2/'){
-            localStorage.setItem('firstLoadDone', null);
-            window.location.reload(false);
-        }else{
-            localStorage.setItem('firstLoadDone', null);
-            setAnimationClass(true)
-            setLoaded(false)
-        }
-      
+        localStorage.setItem('firstLoadDone', null);
+        window.location.reload(false);
     }
     
 
@@ -96,99 +63,58 @@ const Navbar = () => {
     {isLoaded && (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 nav-animation'>
       <div>
-        <Link className='logo' to='/PortfolioV2/'>
-            <img 
-                src={LogoYellow} 
-                alt="Logo" 
-                style={{width: '48px', marginLeft: '30px'}} 
-                onMouseOver={e => (e.currentTarget.src = Logo)} 
-                onMouseOut={e => (e.currentTarget.src = LogoYellow)}
-                onClick={resetHome}
+        <img
+            src={LogoYellow}
+            alt="Logo"
+            className='logo cursor-pointer'
+            style={{width: '48px', marginLeft: '30px'}}
+            onMouseOver={e => (e.currentTarget.src = Logo)}
+            onMouseOut={e => (e.currentTarget.src = LogoYellow)}
+            onClick={resetHome}
         />
-        </Link>
       </div>
 
     {/* menu */}
-
-
         <ul className='hidden md:flex'>
             <li>
-                <NavLink 
-                    exact="true" 
-                    activeclassname="active" 
-                    to="/PortfolioV2/"
-                    onClick={resetHome}
-                    className='hover:text-[#ffd700]'
-                >
-                    Home
-                </NavLink>
+                <ScrollLink to="home" smooth={true} duration={500} className='hover:text-[#ffd700] cursor-pointer'>Home</ScrollLink>
             </li>
             <li>
-                <NavLink 
-                    exact="true" 
-                    activeclassname="active" 
-                    to="/about" 
-                    className='hover:text-[#ffd700]'
-                >
-                    About
-                </NavLink>
+                <ScrollLink to="about" smooth={true} duration={500} className='hover:text-[#ffd700] cursor-pointer'>About</ScrollLink>
             </li>
             <li>
-                <NavLink 
-                    exact="true" 
-                    activeclassname="active" 
-                    to="/skills" 
-                    className='hover:text-[#ffd700]'
-                >
-                    Skills
-                </NavLink>
+                <ScrollLink to="skills" smooth={true} duration={500} className='hover:text-[#ffd700] cursor-pointer'>Skills</ScrollLink>
             </li>
             <li>
-                <NavLink 
-                    exact="true" 
-                    activeclassname="active" 
-                    to="/work" 
-                    className='hover:text-[#ffd700]'
-                >
-                    Work
-                </NavLink>
+                <ScrollLink to="work" smooth={true} duration={500} className='hover:text-[#ffd700] cursor-pointer'>Work</ScrollLink>
             </li>
             <li>
-                <NavLink 
-                    exact="true" 
-                    activeclassname="active" 
-                    to="/contact" 
-                    className='hover:text-[#ffd700]'
-                >
-                    Contact
-                </NavLink>
+                <ScrollLink to="contact" smooth={true} duration={500} className='hover:text-[#ffd700] cursor-pointer'>Contact</ScrollLink>
             </li>
         </ul>
-
 
     {/* Hamburger */}
         <div onClick={handleClick} className='md:hidden cursor-pointer z-10'>
             {!nav ? <FaBars /> : <FaTimes />}
         </div>
 
-
         {/* Mobile menu */}
         <ul className={!nav ? 'nav-transition' : 'md:hidden nav-transition active'}>
-        <li className='py-6 text-2xl sm:text-4xl'>
-            <a onClick={handleClick} href="/PortfolioV2/">Home</a>
-        </li>
-        <li className='py-6 text-2xl sm:text-4xl'>
-            <a onClick={handleClick} href="/about">About</a>
-        </li>
-        <li className='py-6 text-2xl sm:text-4xl'>
-            <a onClick={handleClick} href="/skills">Skills</a>
-        </li>
-        <li className='py-6 text-2xl sm:text-4xl'>
-            <a onClick={handleClick} href="/work">Work</a>
-        </li>
-        <li className='py-6 text-2xl sm:text-4xl'>
-            <a onClick={handleClick} href="/contact">Contact</a>
-        </li>
+            <li className='py-6 text-2xl sm:text-4xl'>
+                <ScrollLink to="home" smooth={true} duration={500} onClick={handleClick}>Home</ScrollLink>
+            </li>
+            <li className='py-6 text-2xl sm:text-4xl'>
+                <ScrollLink to="about" smooth={true} duration={500} onClick={handleClick}>About</ScrollLink>
+            </li>
+            <li className='py-6 text-2xl sm:text-4xl'>
+                <ScrollLink to="skills" smooth={true} duration={500} onClick={handleClick}>Skills</ScrollLink>
+            </li>
+            <li className='py-6 text-2xl sm:text-4xl'>
+                <ScrollLink to="work" smooth={true} duration={500} onClick={handleClick}>Work</ScrollLink>
+            </li>
+            <li className='py-6 text-2xl sm:text-4xl'>
+                <ScrollLink to="contact" smooth={true} duration={500} onClick={handleClick}>Contact</ScrollLink>
+            </li>
         </ul>
 
 
