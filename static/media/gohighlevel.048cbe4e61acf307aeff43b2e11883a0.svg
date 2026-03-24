@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+  <!-- Yellow arrow (left, tallest) -->
+  <polygon points="18,70 10,70 10,38 14,28 18,38" fill="#F5A623"/>
+  <polygon points="6,40 14,20 22,40" fill="#F5A623"/>
+  <!-- Blue arrow (center, shortest) -->
+  <polygon points="42,70 34,70 34,45 38,37 42,45" fill="#4A90D9"/>
+  <polygon points="30,47 38,30 46,47" fill="#4A90D9"/>
+  <!-- Green arrow (right, medium) -->
+  <polygon points="66,70 58,70 58,42 62,30 66,42" fill="#4CAF50"/>
+  <polygon points="54,44 62,22 70,44" fill="#4CAF50"/>
+</svg>
